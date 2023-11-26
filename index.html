@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./style.css">
+  <meta property="og:title" content="Generative1">
+  <meta property="og:image" content="./web2-mainimg.png">
+  <meta property="og:description" content="형태의 왜곡과 변형">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="nameWrapper">
+    <div class="name1" id="name-selected"><a href="../name1/index.html">강지현</a></div>
+    <div class="name2"><a href="./name2/index.html">권채현</a></div>
+    <div class="name3"><a href="./name3/index.html">권나경</a></div>
+    <div class="name4"><a href="./name4/index.html">김로영</a></div>
+    <div class="name5"><a href="./name5/index.html">김민주</a></div>
+    <div class="name6"><a href="./name6/index.html">김성희</a></div>
+    <div class="name7"><a href="./name7/index.html">김예영</a></div>
+    <div class="name8"><a href="./name8/index.html">변민경</a></div>
+    <div class="name9"><a href="./name9/index.html">박언진</a></div>
+    <div class="name10"><a href="./name10/index.html">성슬기</a></div>
+    <div class="name11"><a href="./name11/index.html">이연호</a></div>
+    <div class="name12"><a href="./name12/index.html">한세흔</a></div>
+    <div class="name13"><a href="./name13/index.html">황예인</a></div>
+    <div class="name14"><a href="./index.html"><span class="name14-item"><br><br>화면과 이름을<br><br> 클릭해 보세요.</span><span class="name14-1"><br><br>양민하<br><br>교수님</span></a></div>
+  </div>
+  <div class="nameWrapper2">
+    <div class="name15">Generative1 수업에서는 코딩을 통해 "형태의 왜곡과 변형"을 주제로 드로잉을 진행하였습니다.</div>
+  </div>
+  <div class="name16"><a href="../name1/index.html"><span class="material-symbols-outlined myArrow">east</span></a></div>
+  <script src="sketch.js"></script>
+  <script>
+    let nameWrapper = document.querySelector(".nameWrapper")
+    let name1 = document.querySelector(".name1")
+    let name2 = document.querySelector(".name2")
+    let name3 = document.querySelector(".name3")
+    let name4 = document.querySelector(".name4")
+    let name5 = document.querySelector(".name5")
+    let name6 = document.querySelector(".name6")
+    let name7 = document.querySelector(".name7")
+    let name8 = document.querySelector(".name8")
+    let name9 = document.querySelector(".name9")
+    let name10 = document.querySelector(".name10")
+    let name11 = document.querySelector(".name11")
+    let name12 = document.querySelector(".name12")
+    let name13 = document.querySelector(".name13")
+    let name14 = document.querySelector(".name14")
+
+    document.addEventListener("mousemove", (e) => {
+
+const xRelativeToHeader = e.clientX / nameWrapper.clientWidth
+const yRelativeToHeader = e.clientY / nameWrapper.clientHeight
+
+name1.style.transform = `translate(${(xRelativeToHeader * -50)}px, ${yRelativeToHeader * -50}px)`
+name2.style.transform = `translate(${(xRelativeToHeader * 80)}px, ${yRelativeToHeader * 50}px)`
+name3.style.transform = `translate(${(xRelativeToHeader * 60)}px, ${yRelativeToHeader * -70}px)`
+name4.style.transform = `translate(${(xRelativeToHeader * -30)}px, ${yRelativeToHeader * -40}px)`
+name5.style.transform = `translate(${(xRelativeToHeader * 180)}px, ${yRelativeToHeader * 90}px)`
+name6.style.transform = `translate(${(xRelativeToHeader * 30)}px, ${yRelativeToHeader * -50}px)`
+name7.style.transform = `translate(${(xRelativeToHeader * -40)}px, ${yRelativeToHeader * 20}px)`
+name8.style.transform = `translate(${(xRelativeToHeader * 90)}px, ${yRelativeToHeader * -80}px)`
+name9.style.transform = `translate(${(xRelativeToHeader * 160)}px, ${yRelativeToHeader * -30}px)`
+name10.style.transform = `translate(${(xRelativeToHeader * 150)}px, ${yRelativeToHeader * -40}px)`
+name11.style.transform = `translate(${(xRelativeToHeader * 30)}px, ${yRelativeToHeader * 20}px)`
+name12.style.transform = `translate(${(xRelativeToHeader * 10)}px, ${yRelativeToHeader * 100}px)`
+name13.style.transform = `translate(${(xRelativeToHeader * -190)}px, ${yRelativeToHeader * 130}px)`
+name14.style.transform = `translate(${(xRelativeToHeader * 50)}px, ${yRelativeToHeader * 70}px)`
+})
+
+  </script>
+</body>
+
+</html>
